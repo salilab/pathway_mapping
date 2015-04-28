@@ -4,12 +4,12 @@ This repository contains the python modules and scripts for integrative pathway 
 
 
 Directories and Files to be added:
-Examples/
-    gly/
-    gulonate/
-    ser/
-    kdo/
-    kdo_ser/
+    Examples/
+        gly/
+        gulonate/
+        ser/
+        kdo/
+        kdo_ser/
 
     And each directory in Examples contains:
         Datafiles/
