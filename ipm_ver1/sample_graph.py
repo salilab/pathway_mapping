@@ -53,7 +53,7 @@ class Paths(object):
         row['strrepr'] = str(graph)
         row.append()
     
-    def sample_single_iteration(self, currstate, steps, mcparam, iteration=1, iterationlength=50000):
+    def sample_single_iteration(self, currstate, steps, mcparam, iteration=1, iterationlength=50000,nodes_to_move=[]):
             
         def accept(newstate, currstate, step_norm):
             diff = currstate.objscore - newstate.objscore
@@ -90,6 +90,8 @@ class Paths(object):
         while step < steps:
             newstate = currstate.copy()
             move_int = choose_move()
+            if len(nodes_to_move)>0:
+                newstate.rxngraph.protein_nodes=nodes_to_move
     
             if move_int == 0:
                 if len(newstate.rxngraph.protein_nodes) > 3 and rand.choice([0, 1]):
@@ -124,7 +126,7 @@ class Paths(object):
 
 
     def sample_labels_monte_carlo(self, steps, protnum, lignum, restraints, random=False, fixed=[], startprots=[], 
-                                  keep=[], transporter=None, numiterations=1, kparameter_set=0, parameter_set=0):
+                                  keep=[], nodes_to_move=[], transporter=None, numiterations=1, kparameter_set=0, parameter_set=0):
         #numiterations = 5000000/steps
         
         #numiterations = 5
@@ -153,6 +155,8 @@ class Paths(object):
 
         if startprots:
             currstate.construct_graph_from_path(startprots, ligand_members)
+        elif len(e1)>0:
+            currstate.construct_graph_from_e1(protein_members, ligand_members,e1)
         else:
             currstate.construct_graph_from_path(protein_members, ligand_members)
 
@@ -172,7 +176,7 @@ class Paths(object):
         bestgraph = currstate
         for j in range(1, 1+numiterations):
             bestgraph, single_acc_count = self.sample_single_iteration(bestgraph, steps, mcparam,
-                                                     iteration=j, iterationlength=iterationlength)
+                                                     iteration=j, iterationlength=iterationlength,nodes_to_move=nodes_to_move)
             print 'Iteration %d: %s, O: %.3f' % (j, str(bestgraph), bestgraph.objscore)
             acc_count += single_acc_count
         print '---------------------------------------------'
