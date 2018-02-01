@@ -28,6 +28,7 @@ class rxnGraph(object):
         self.ligand_allnodes = []
         self.fixed = []
         self.keep = []
+        self.e1=[] #enzyme position to keep fixed
         
         if proteins is not None and ligands is not None and interactions is not None:
             self.construct_graph(proteins, ligands, interactions)
@@ -74,6 +75,22 @@ class rxnGraph(object):
             interactions.append([proteins[-1], ligands[-1]])
         self.construct_graph(proteins, ligands, interactions)
 
+   def construct_graph_from_e1(self, proteins, ligands,e1):
+        interactions = []; lig_selection=[rand.choice(ligands)];
+        interactions.append([lig_selection[0], e1[0]])
+        proteins_remaining=[i for i in proteins if i not in e1]
+        ligands_remaining=[i for i in ligands if i not in lig_selection]
+
+        interactions.append([e1[0],ligands_remaining[0]])
+
+        for i in range(len(proteins_remaining)):
+            interactions.append([ligands_remaining[i], proteins_remaining[i]])
+            if i > 0:
+                interactions.append([proteins_remaining[i-1], ligands_remaining[i]])
+        if len(ligands_remaining) == len(proteins_remaining) + 1:
+            interactions.append([proteins_remaining[-1], ligands_remaining[-1]])
+        self.construct_graph(e1+proteins_remaining, ligands, interactions)        
+        
     def construct_graph(self, proteins, ligands, interactions):
         # interactions: [[protein, ligand], [protein, ligand]]
         self.graph.clear()
@@ -639,6 +656,12 @@ class modelGraph(object):
         self.proteins = proteins
         self.ligands = ligands
         self.rxngraph.construct_graph_from_path(proteins, ligands)
+    
+    def construct_graph_from_e1(self, proteins, ligands,e1):
+        self.proteins = proteins
+        self.ligands = ligands
+        self.e1=e1
+        self.rxngraph.construct_graph_from_e1(proteins, ligands,e1) 
 
     def add_choices(self, protein_choices, ligand_choices):
         self.rxngraph.add_choices(protein_choices, ligand_choices)
