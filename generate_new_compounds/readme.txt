@@ -5,3 +5,7 @@ Method:
 (b) Generate isomers of new compounds
 (c) Draw out 3D structures
 (d) Minimize 3D structures and dock
+
+Files:
+(1) generate_new_smiles.py 
+(2) smiles.txt : input file with smiles string and ligand identifier
