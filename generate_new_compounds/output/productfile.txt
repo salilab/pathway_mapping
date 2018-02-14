@@ -1,3 +1,6 @@
+##############################
+#Reaction step | SMILES | UNK [unknown label as not found on Kegg]
+###############################
 1 CC(C)(COP(=O)([O-])OP(=O)([O-])OCC1OC(C(O)C1OP(=O)([O-])[O-])n1cnc2c(N)ncnc21)C(O)C(=O)NCCC(=O)NCCSC(=O)C=Cc1ccccc1 UNK
 1 CC(C)C=CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(=O)([O-])OP(=O)([O-])OCC1OC(C(O)C1OP(=O)([O-])[O-])n1cnc2c(N)ncnc21 UNK
 1 CC(C)(COP(=O)([O-])OP(=O)([O-])OCC1OC(C(O)C1OP(=O)([O-])[O-])n1cnc2c(N)ncnc21)C(O)C(=O)NCCC(=O)NCCSC(=O)C=CCC(=O)[O-] UNK
