@@ -1,3 +1,6 @@
+##############################
+#Reaction step | SMILES | Label
+###############################
 1 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@H](O)Cc4ccccc4 C16257
 1 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@@H](O)CC(C)C C21089
 1 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@H](O)CCC(=O)[O-] C03058
