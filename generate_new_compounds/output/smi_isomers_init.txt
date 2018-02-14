@@ -6,6 +6,8 @@
 #all IDs can be traced back to original Kegg molecules
 #n is the isomer number based on C
 ##############################
+#Ligand ID | SMILES
+##############################
 C05165_2_4_5_iso_0 CC(C)(CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-])[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@H]1C(=O)C(=O)CC[C@H]1N
 C05165_2_4_5_iso_1 CC(C)(CO[P@@](=O)([O-])O[P@](=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-])[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@H]1C(=O)C(=O)CC[C@H]1N
 C05165_2_4_5_iso_2 CC(C)(CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-])[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@@H]1C(=O)C(=O)CC[C@H]1N
