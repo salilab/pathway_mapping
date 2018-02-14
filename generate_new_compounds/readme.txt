@@ -8,4 +8,4 @@ Method:
 
 Files:
 (1) generate_new_smiles.py 
-(2) smiles.txt : input file with smiles string and ligand identifier
+(2) generate_isomers.py
