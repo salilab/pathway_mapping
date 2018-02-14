@@ -1,4 +1,12 @@
-#smiles strings
+###############################
+##SMILES ID SMILES STRING
+#ID description: example: X_a_b_c
+#X is the Kegg ligand
+#a, b, and c are reaction chemistries [see dictionary in script] applied to X
+#all IDs can be traced back to original Kegg molecules
+##############################
+#Ligand number [starts from 310 as a follow up to the 309 CoA ligands on Kegg] | Ligand ID | SMILES
+###############################
 310 C18323_2 CC(C(=O)[O-])C(O)C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-]
 311 C06028_2 CC(O)(CC(=O)[O-])C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-]
 312 C06723_2 CC(C)(COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-])[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)C(O)CCCCC(=O)[O-]
