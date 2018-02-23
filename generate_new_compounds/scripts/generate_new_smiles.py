@@ -66,7 +66,7 @@ def getFP(smis):
     rxn_p_noH = Chem.RemoveHs(m)
     smis = Chem.MolToSmiles(rxn_p_noH, isomericSmiles=True)
     pmols = Chem.MolFromSmiles(smis)
-    return AllChem.GetMorganFingerprintAsBitVect(m, 3, useChirality=False)
+    return AllChem.GetMorganFingerprintAsBitVect(m, 15, useChirality=False)
 
 def writelisttofile(listn,filen):
     for i in listn:
@@ -169,7 +169,7 @@ for k in range(0,number_of_runs):
                 rxn_p_noH = Chem.RemoveHs(rxn_p)
                 smis = Chem.MolToSmiles(rxn_p_noH, isomericSmiles=True)
                 pmols = Chem.MolFromSmiles(smis)
-                cfps = AllChem.GetMorganFingerprintAsBitVect(pmols, 3, useChirality=False)
+                cfps = AllChem.GetMorganFingerprintAsBitVect(pmols, 15, useChirality=False)
                 for j in range(0,len(smilist)+1):
                     if getTC(getFP(smilist[j]),cfps)==1.0:
                         break
