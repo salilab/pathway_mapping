@@ -37,8 +37,8 @@ for k,i in smidict.iteritems():
 #########
 phenyllactatedehydratase1=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2](-[OD1])-[Ch:3]>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]=[C:3]"]
 phenyllactatedehydratase2=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]=[C:3]>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2](-[OD1])-[Ch:3]"]
-betatoalpha=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[Ch:2]-[C:3](-[OD1])>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[CX4:2](-[OD1])-[C:3]"]
-alphatobeta=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2](-[OD1])-[Ch:3]>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]-[C:3](-[OD1])"]
+betatoalpha=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[Ch2:2]-[C:3](-[OD1])>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2](-[OD1])=[C:3]"]
+alphatobeta=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2](-[OD1])-[Ch2:3]>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]=[C:3](-[OD1])"]
 dehydrogenase1=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]-[Ch:3](-[OD1])>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]-[CX3:3](=O)"]
 dehydrogenase2=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]-[C:3](=O)>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]-[Ch:3](-[OD1])"]
 dehydratase1=["n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[C:2]=[C:3]>>n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCS-[C:1](=O)-[Ch:2]-[C:3](-[OD1])"]
@@ -130,6 +130,21 @@ def GetStereoIsomers(mol, maxNum=12):
         if len(out) >= maxNum:
             break
     return out
+
+def compare_dicts(dict1,dict2):
+    print "comparing dictionaries now.."
+    dict_return=dict1.copy();same_keys=[]
+    for k,v in dict1.items():
+        for k1,v1 in dict2.items():
+            if (getTC(getFP(v),getFP(v1))==1 and k != k1):
+                print >> tmxl5, k,k1,v,v1,getTC(getFP(v),getFP(v1))
+                same_keys.append(k1)
+                if k not in same_keys:
+                    dict_return.pop(k,None)
+                    print "removed " + k+ " from your dictionary, because a similar compound "+ k1 + " exists"
+                break
+    return dict_return
+
 
 
 ####################get finger prints of original smiles
