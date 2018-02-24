@@ -1,3 +1,11 @@
+###############################
+##SMILES ID SMILES STRING
+#ID description: example: X_a_b_c
+#X is the Kegg ligand
+#a, b, and c are reaction chemistries [see dictionary in script] applied to X
+#all IDs can be traced back to original Kegg molecules
+##############################
+###############################
 0 C16471 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)CC(=O)C=C(C)C
 1 C00024 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)C
 2 C06723 n1cnc(N)c(c12)ncn2[C@H]3[C@H](O)[C@H](OP(=O)([O-])[O-])[C@H](O3)COP(=O)([O-])OP(=O)([O-])OCC(C)(C)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)/C=C\CCCC(=O)[O-]
